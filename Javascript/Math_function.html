@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Function in JS</title>
+</head>
+
+<body>
+    <div class="container">
+        This is math function tutorial
+    </div>
+    <script>
+        let m = Math;
+        console.log(m);
+
+        console.log("The values of E is ", Math.E);
+        console.log("The values of PI is ", Math.PI);
+        console.log("The values of LN2 is ", Math.LN2);
+        console.log("The values of SQRT1_2 is ", Math.SQRT1_2);
+
+        let a = 34.55;
+        let b = 43;
+
+        console.log("Round of value for a ", Math.round(a));
+        console.log("Round of value for b ", Math.round(b));
+
+        console.log("3 to power of 2 ", Math.pow(3, 2));
+        console.log("4 to power of 5 ", Math.pow(4, 5));
+
+        console.log("square root of 36 ", Math.sqrt(36));
+
+        console.log("5.8 rounded up to nearest integer ", Math.ceil(5.8));
+        console.log("5.8 rounded down to nearest integer ", Math.floor(5.8));
+
+        console.log("-6 absolute value is  ", Math.abs(-6));
+
+        console.log("Value of sin(pi/2)  ", Math.sin(Math.PI / 2));
+        console.log("Value of cos(pi/2)  ", Math.cos(Math.PI / 2));
+        console.log("Value of tan(pi/2)  ", Math.tan(Math.PI / 2));
+
+        console.log("Minimum value of 4, 5, 6 is ", Math.min(4, 5, 6));
+        console.log("Minimum value of 14, 5, 16 is ", Math.min(14, 5, 16));
+        console.log("Maximum value of 4, 5, 6 is ", Math.max(4, 5, 6));
+        console.log("Maximum value of 14, 5, 16 is ", Math.max(14, 5, 16));
+
+        let r = Math.random();
+        console.log("Random no. between 0 to 1 is ",r);
+
+        // Random number b/w (a, b) = a + (b-a)*Math.random()
+        let r1_100 = 1 + (100-1) * Math.random()
+        console.log("Random no. between 1 to 100 is ",Math.round(r1_100)); 
+
+    </script>
+</body>
+</html>

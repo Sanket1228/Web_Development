@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data & Time in JS</title>
+    <style>
+        .container{
+            background-color: blanchedalmond;
+            padding: 34px;
+            margin: 2px;
+            border: 2px solid salmon;
+            text-align: center;
+            font-size: 19px;
+        }
+        #time{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Current Time is <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is Data and Time tutorial");
+
+        let now = new Date();
+        console.log(now);
+
+        let dt = new Date(0);
+        console.log(dt);
+
+        // let newDate = new Date("2020-03-24");
+        // console.log(newDate);
+
+        // let newDate = new Date(year, month, date, hours, minutes, seconds, milliseconds);
+        let newDate = new Date(2000,11,28,12,0,0,0);       //here month 11 means Dec bcoz months count start from 0
+        console.log(newDate);
+
+        let yr = newDate.getFullYear();
+        console.log(yr);
+        let month = newDate.getMonth();
+        console.log(month);
+        let date = newDate.getDate();
+        console.log(date);
+        let hour = newDate.getHours();
+        console.log(hour);
+        let min = newDate.getMinutes();             //same funtion- getSeconds() and getMilliseconds()
+        console.log(min);
+
+        newDate.setFullYear(2020);
+        newDate.setMonth(4);
+        newDate.setDate(23);
+        newDate.setHours(4);
+        newDate.setMinutes(23);
+        newDate.setSeconds(30);
+        newDate.setMilliseconds(20);
+        console.log(newDate);
+
+        setInterval(clock, 1000);
+
+        function clock(){
+            time.innerHTML = new Date();
+        }
+    </script>
+</body>
+</html>

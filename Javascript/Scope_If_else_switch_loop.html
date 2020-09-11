@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope , ifElse and Switch loop</title>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>Item_1</li>
+            <li>Item_2</li>
+            <li>Item_3</li>
+            <li>Item_4</li>
+        </ul>
+    </div>
+    <script>
+        var string1 = "This is a string";
+        var string1 = "This is a string2";
+        console.log(string1);
+        
+        let a = "u";
+        {
+            let a = "u6";
+            console.log(a)
+        }
+        console.log(a)
+        
+        const b = "This cannot be changed";         //This variable cannot be changed within program
+        console.log(b);
+        
+        let age = 5;
+        if (age > 18) {
+            console.log("You can drink water");
+        }
+        else if (age == 2) {
+            console.log("Age is 2")
+        }
+        else if (age == 5) {
+            console.log("Age is 5")
+        }
+        else {
+            console.log("You can drink Cold Drink");
+        }
+
+        const day = "Tuesday"
+        switch (day) {
+            case "Monday":
+                console.log("Today is Monday")
+                break;
+            case "Tuesday":
+                console.log("Today is Tuesday")
+                break;
+            case "Wednesday":
+                console.log("Today is Wednesday")
+                break;
+            case "Thursday":
+                console.log("Today is Thursday")
+                break;
+            case "Friday":
+                console.log("Today is Friday")
+                break;
+            case "Saturday":
+                console.log("Today is Saturday")
+                break;
+            case "Sunday":
+                console.log("Today is Sunday")
+                break;
+            default:
+                break;
+        }
+    </script>
+</body>
+
+</html>

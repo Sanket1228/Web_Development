@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and Custom Properties</title>
+    <style>
+        :root{
+            --primery-color : red; 
+            --secondary-color : green;
+        }
+        .box{
+            /* --primery-color : red;  this is having local scope */
+            width: 200px;
+            height: 200px;
+            background-color: var(--primery-color);
+            margin: 3px 3px;
+            border: 4px solid silver;
+        }
+        .container{
+            background-color: var(--secondary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

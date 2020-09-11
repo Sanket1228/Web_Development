@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid template area</title>
+    <style>
+        .item{
+            background-color: yellow;
+            border: 2px solid black;
+            padding: 12px 12px;
+        }
+        .container{
+            display: grid;
+            grid-template-areas: 
+            'navbar navbar navbar navbar '
+            'section section section aside'
+            'footer footer footer footer';
+            grid-gap: 0.5rem;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About Contact Us
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quo vel excepturi totam ad nobis reprehenderit optio? Ipsa ex iusto error eaque laboriosam qui nobis dolor nihil eligendi omnis odio ab, quasi consequuntur recusandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt ducimus labore voluptate necessitatibus quidem dignissimos vel neque dolores alias voluptatibus, perferendis praesentium molestias quisquam explicabo excepturi, repudiandae nobis veritatis atque reprehenderit quis, esse dolorem reiciendis. Doloremque explicabo iste tempora nobis aperiam corporis! Sunt ipsa blanditiis quo eveniet aliquid amet nostrum eum porro eaque doloremque ex obcaecati impedit enim rem asperiores tempore pariatur accusantium vel fugit molestiae, quaerat cumque illo dolorem quibusdam. Esse hic saepe, aliquam assumenda officia maxime dolore a. Sed laboriosam explicabo, temporibus dolores est quasi sint quam ipsum inventore. Obcaecati sunt ducimus quos nostrum! Nisi molestias a tempore fuga, magnam est quo pariatur obcaecati expedita adipisci mollitia exercitationem sapiente perferendis incidunt, eaque provident, eveniet inventore reprehenderit accusamus. Rerum obcaecati eum perspiciatis amet iure, ipsum odio ab culpa dolorem doloremque expedita. Fugit fugiat quod blanditiis placeat. Veritatis eum minus, enim saepe eligendi facere!
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolore minima quisquam cum tempore molestiae consequuntur veniam facilis! Iure, animi obcaecati. Temporibus est deserunt, dolore nemo, accusantium architecto dolor iure, minima a consequuntur corporis!
+        </div>
+        <footer class="item">Copyright sanketpatil.com</footer>
+    </div>
+</body>
+</html>

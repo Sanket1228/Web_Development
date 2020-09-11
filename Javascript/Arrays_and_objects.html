@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects in Javascript</title>
+</head>
+<body>
+    <div class="container">Hello, This is Sanket Patil </div>
+    <script>
+        let employee = {
+            name: "Sanket",
+            salary: 1000,
+            education: "Engineering",
+        }
+        console.log(employee)
+        let names = [41, 2, 4, "Sanket", undefined];
+        // let names = new Array(41, 2, 4, "Sanket", undefined);
+        console.log(names[1]);
+        console.log(names.length)
+        names = names.sort()
+        console.log(names)
+        names.push("This is pushed element")
+        console.log(names)
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Selectors in CSS</title>
+    <style>
+        h1{
+            background-color: blue;
+            color: white;
+        }
+        div li p{
+            background-color: red;
+            color: white;
+        }
+        div > p{                                    /*it means div is exact parent of p*/
+            background-color: black;
+            color: white;
+        }
+        div + p{                                    /*it means p just after div*/
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, architecto!</p>
+                </li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, dolor.</p>
+        </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, minus.</p>
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, iste?</p>
+</body>
+</html>

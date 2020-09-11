@@ -1,0 +1,9 @@
+/* navigation */
+#navbar{
+    flex-direction: column;
+}
+
+/* home section  */
+#home{
+    height: 707px;
+}

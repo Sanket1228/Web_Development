@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow & Text Shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 14px;
+            margin: 23px 14px;
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            /* box-shadow: 6px 8px green; */
+            /* box-shadow: -6px -8px green; */
+            /* box-shadow: 6px 8px 10px green; */
+            box-shadow: 6px 8px 10px 8px green;
+            /* box-shadow: inset 6px 8px green;          for shaddow inside box */
+            box-shadow: 3px 5px green, 4px 6px red;        
+        }
+
+        .card h2{
+            /* text-shadow: 3px 4px silver; */
+            /* text-shadow: 3px 4px 2px silver;             */
+            text-shadow: -3px -4px 2px silver;            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is c++ course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aspernatur hic facere possimus ipsa
+                eligendi consectetur obcaecati quas dolores cum molestiae totam cupiditate at omnis sapiente non,
+                perspiciatis dolore, nihil accusamus laudantium autem amet?</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is HTMl course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aspernatur hic facere possimus ipsa
+                eligendi consectetur obcaecati quas dolores cum molestiae totam cupiditate at omnis sapiente non,
+                perspiciatis dolore, nihil accusamus laudantium autem amet?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>This is Java course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aspernatur hic facere possimus ipsa
+                eligendi consectetur obcaecati quas dolores cum molestiae totam cupiditate at omnis sapiente non,
+                perspiciatis dolore, nihil accusamus laudantium autem amet?</p>
+        </div>
+    </div>
+</body>
+
+</html>

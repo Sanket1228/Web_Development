@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation menu */
+#navbar{
+    background-color: #ff3e3e;
+    padding: 28px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin: 0px 12px;
+    filter: invert(1);
+}
+
+#navbar .logo img{
+    height: 49px;
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    text-decoration: none;
+    padding: 10px 23px;
+    color: white;
+    font-size: 18px;
+}
+#navbar li a:hover{
+    color: black;
+}
+
+/* Introsection  */
+#introSection{
+    background: url(/static/bg2.jpg) no-repeat center center/cover;
+    height: 589px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    font-weight: bold;
+}
+
+#introSection div{
+    font-size: 62px;
+    color: white;
+}
+
+#introSection div.small{
+    font-size: 36px;
+    padding: 5px;
+}
+
+/* Mission section  */
+#missionSection{
+    height: 300px;
+    margin: 15px;
+}
+
+#missionSection h2{
+    text-align: center;
+    font-size: 32px;
+}
+
+.cardContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.card{ 
+    border: 2px solid black;
+    height: 225px;
+    width: 253px;
+    margin: 17px;
+    border-radius: 12px;
+}
+
+.card h3{
+    text-align: center;
+    margin: 10px;
+}
+
+.cardbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-img{
+    height: 133px;
+    margin: 9px 8px;
+}
+
+.card-img img{
+    height: inherit;
+}
+
+
+/* Sponser section  */
+#sponserSection{
+    height: 300px;
+    background-color: #e09393;
+}
+
+#sponserSection h3{
+    position: relative;
+    top: 12px;
+    text-align: center;
+    font-size: 32px;
+}
+
+#sponserSection img{
+    height: 117px;
+    position: relative;
+    top: 52px;
+    left: 21%;
+    margin: 0px 21px;
+}
+
+
+/* Footer section  */
+#footer{
+    height: 100px;
+    background-color: black;

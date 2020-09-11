@@ -1,0 +1,59 @@
+doctype html
+html
+    head
+        title Sanket's Dance Academy
+        style   
+            include ../static/style.css
+    body
+        nav#navbar
+            ul
+                div.logo
+                    img(src="/static/img/logo.png")
+                    | SDC
+                li #[a(href="/") Home]
+                li #[a(href="/") About]
+                li #[a(href="/") Contact Us]
+                li #[a(href="/") Class info]
+                li #[a(href="/") Services]
+        
+        section#introSection
+            div Welcome to Sanket Dance Academy
+            div.small Eat Dance Sleep Repeat
+        
+        section#missionSection
+            h2 Our Mission
+            div.cardContainer
+                div.card
+                    h3 Dance Perfection
+                    div.cardbox
+                        div.card-img
+                            img(src="/static/img/1.png")
+                        div.card-content
+                            p This is the best dance academy in India
+                div.card
+                    h3 Dance way you like
+                    div.cardbox
+                        div.card-img
+                            img(src="/static/img/2.png")
+                        div.card-content
+                            p This is the best dance academy in India
+                div.card
+                    h3 Expert Teaching
+                    div.cardbox
+                        div.card-img
+                            img(src="/static/img/3.png")
+                        div.card-content
+                            p This is the best dance academy in India
+
+        section#sponserSection
+            h3 Our Sponsers
+            img(src="/static/img/logo1.png")
+            img(src="/static/img/logo2.png")
+            img(src="/static/img/logo3.png")
+            img(src="/static/img/logo4.png")
+
+        footer#footer
+            | Copyright (c) SanketDanceAcademy.com 2020 | All Right Reserved
+        
+        script
+            include ../static/script.js

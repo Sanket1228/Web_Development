@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries with css grid</title>
+    <style>
+        .bdr {
+            background-color: yellow;
+            border: 2px solid black;
+            padding: 12px 12px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                'nav nav nav '
+                'section section aside'
+                'footer footer footer';
+            grid-gap: 0.4rem;
+
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        @media only screen and (max-width: 300px) {
+            body {
+                background-color: red;
+            }
+            .container {
+                grid-template-areas:
+                    'nav nav nav '
+                    'section section section'
+                    'aside aside aside'
+                    'footer footer footer';
+                grid-gap: 0.2rem;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        .center{
+            text-align: center;
+        }
+
+        @media (min-width: 300px) and (max-width: 500px) {
+            body {
+                background-color: rgb(74, 190, 146);
+            }
+            .container {
+                grid-template-areas:
+                    'nav nav nav '
+                    'section section section'
+                    'aside aside aside'
+                    'footer footer footer';
+                grid-gap: 0.2rem;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width: 800px) {
+            body {
+                background-color: green;
+            }
+
+            .container {
+                grid-template-areas:
+                    'nav nav nav '
+                    'section section section'
+                    'aside aside aside'
+                    'footer footer footer';
+                grid-gap: 0.3rem;
+            }
+        }
+
+        @media (min-width: 800px) {
+            body {
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home </span>
+            <span>About</span>
+            <span>Contact Us</span>
+            <span>Services</span>
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS Grid</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam et error possimus quaerat veniam a
+                modi perspiciatis sed iste suscipit ex mollitia, placeat ipsum saepe, aut omnis assumenda similique
+                nostrum labore voluptatibus architecto sunt? Iste non at asperiores necessitatibus molestiae harum vel
+                nemo amet autem?</p>
+        </section>
+        <aside class="bdr">
+            <h1>More About Us</h1>
+        </aside>
+    </div>
+    <footer class="bdr center">Copyright sanketpatil.com 2020</footer>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>borders and background</title>
+    <style>
+        #firstPara{
+            background-color: red;
+            height: 100px;
+            width: 455px;
+            border-width: 4px;
+            border-color: green;
+            border-radius: 11px;
+            border-style: solid;
+        }
+        #secondPara{
+            background-color: red;
+            height: 100px;
+            width: 455px;
+            border-top: 4px solid gray;
+            border-bottom: 10px solid lightblue;
+            border-top-left-radius: 10px;
+        }
+
+        #thirdPara{
+            height: 700px;
+            width: 1000px;
+            background-image:url("virat_dhoni.jpg");
+            border: 4px solid violet;
+            background-repeat: no-repeat;    /*repeat-x repeaty will repeat in respective direction*/
+            /* background-position: center center; */
+            background-position: 192px 40px;    /*first parameter is from x axis and second parameter is for y axis*/
+        }
+
+    </style>
+</head>
+<body>
+     <h2>This is heading</h2>
+     <p id="firstPara">This is my paragraph</p>
+
+     <h2>This is second heading</h2>
+     <p id="secondPara">This is my second paragraph</p>
+
+     <h2>This is third heading</h2>
+     <p id="thirdPara">This is my third paragraph</p>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and listening to events in JS</title>
+    <style>
+        #btn {
+            width: 82px;
+            height: 33px;
+            padding: 8px;
+            background-color: aqua;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad cumque vel maxime laudantium velit mollitia
+            dicta necessitatibus distinctio animi sunt harum labore saepe eligendi, tempora exercitationem rerum fuga,
+            sequi recusandae in est laborum, eum esse. Blanditiis error dignissimos commodi alias. Ipsa commodi
+            consectetur et itaque voluptates. Deserunt pariatur optio nisi ipsa dicta tempore temporibus quisquam quae,
+            error doloribus, omnis possimus. Necessitatibus, ducimus? Quas, incidunt ullam, laudantium vero fuga
+            eligendi eaque iste quos error eveniet provident omnis quis doloremque voluptates? Odit tempora rem iure
+            eligendi libero, in modi aliquid harum eum asperiores sit itaque optio nam, quod animi illo ipsum odio ullam
+            perspiciatis doloribus doloremque provident? Labore iste impedit nostrum ipsum. A fugiat iusto minus quod ut
+            exercitationem. Nostrum veniam, eos rem reiciendis recusandae assumenda animi. Alias rerum, consequuntur
+            amet sequi labore doloremque voluptas assumenda laborum nisi. Porro, sunt id! Repudiandae ipsam veniam
+            quidem, incidunt repellat facere quod! Perferendis, possimus totam excepturi dolores facere doloribus
+            nostrum laboriosam debitis perspiciatis fugit, amet ab iusto iure! Minus consequatur minima accusantium
+            facere, quo quas praesentium doloribus, tempora quibusdam blanditiis animi fugit assumenda autem. Alias,
+            blanditiis tempore? Tenetur, saepe, iure vitae at earum praesentium, velit doloremque reprehenderit minus
+            quam accusamus eos nesciunt distinctio voluptatem quaerat debitis architecto quia voluptatum exercitationem
+            harum error aspernatur blanditiis veniam? Iure possimus totam, officiis ipsam id fugit ab illo natus
+            sapiente omnis earum minus consequuntur dolorum. Optio, recusandae. Modi sapiente eaque impedit a quis
+            dolores tempore quibusdam numquam non. Debitis eligendi illum quam nam.
+        </p>
+    </div>
+    <button id="btn" onclick="toggle()">Show/Hide</button>
+
+    <script>
+
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run() {
+            console.log('Over the Para');
+        });
+
+        para.addEventListener('mouseout', function run() {
+            console.log("Outside the Para");
+        });
+
+
+        function toggle() {
+            let para = document.getElementById('para');
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            } else {
+                para.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>

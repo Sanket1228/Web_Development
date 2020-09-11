@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow functions in JS</title>
+</head>
+<body>
+    <div class="container">
+        This is Arrow Tutorial
+    </div>
+    <script>
+        // let greet = () =>{
+        //     console.log("Good Morning");
+        // }
+        let greet = () => console.log("Good Morning");
+        greet();
+
+        let sum1 = (a,b) =>  console.log(a+b);
+        sum1(1,2);
+
+        let half = a => console.log(a/2);
+        half(5);
+
+        let obj1 = {
+            greeting : "Good Morning",
+            names : ['Sanket','Ganesh','Mayur','Shantanu','Yash'],
+            speak(){
+                this.names.forEach((student) => {
+                    console.log(this.greeting + " Hello " + student);
+                });
+            }
+        }
+        obj1.speak();
+    </script>
+</body>
+</html>

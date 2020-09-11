@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascripts | Strings and its functions</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is first heading</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, sint?</p>
+    </div>
+    <script>
+        var strings = 'this"s';
+        console.log(strings);
+        var name = 'Sanket';
+        var sirname = 'Patil';
+        var message = 'Sanket is a good boy';
+        var temp = `${name} is a 'nice' person "and" his sirname is ${sirname}`;
+        console.log(strings + name + message);
+        console.log(temp);
+        var len = name.length;
+        console.log(`Length of name is ${len}`)
+        console.log("Hello \\nworld\nSanket\tPatil");
+        var y = new String("this");
+        console.log(y);
+        document.getElementById('content').innerHTML = '<h3>this is an h3 heading</h3>'
+
+    </script>
+</body>
+
+</html>
