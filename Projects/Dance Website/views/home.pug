@@ -1,0 +1,41 @@
+extends base.pug
+
+block style
+    style   
+        include ../static/style.css
+
+block content        
+    section#introSection
+        div Welcome to Sanket Dance Academy
+        div.small Eat Dance Sleep Repeat    
+    section#missionSection
+        h2 Our Mission
+        div.cardContainer
+            div.card
+                h3 Dance Perfection
+                div.cardbox
+                    div.card-img
+                        img(src="/static/img/1.png")
+                    div.card-content
+                        p This is the best dance academy in India
+            div.card
+                h3 Dance way you like
+                div.cardbox
+                    div.card-img
+                        img(src="/static/img/2.png")
+                    div.card-content
+                        p This is the best dance academy in India
+            div.card
+                h3 Expert Teaching
+                div.cardbox
+                    div.card-img
+                        img(src="/static/img/3.png")
+                    div.card-content
+                        p This is the best dance academy in India
+
+    section#sponserSection
+        h3 Our Sponsers
+        img(src="/static/img/logo1.png")
+        img(src="/static/img/logo2.png")
+        img(src="/static/img/logo3.png")
+        img(src="/static/img/logo4.png")

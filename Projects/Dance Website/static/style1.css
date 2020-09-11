@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation menu */
+#navbar{
+    background-color: #ff3e3e;
+    padding: 28px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin: 0px 12px;
+    filter: invert(1);
+}
+
+#navbar .logo img{
+    height: 49px;
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    text-decoration: none;
+    padding: 10px 23px;
+    color: white;
+    font-size: 18px;
+}
+#navbar li a:hover{
+    color: black;
+}
+
+.container h1{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 68vh;
+    margin-top: 17px;
+}
+
+.myInput{
+    border-radius: 14px;
+    padding: 9px;
+    margin: 9px;
+    width: 511px;
+    outline: none;
+    border: 2px solid black;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form .btn{
+    padding: 8px 41px;
+    margin: 10px;
+    background: #e23434;
+    outline: none;
+    border: 2px solid black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Footer section  */
+#footer{
+    height: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
